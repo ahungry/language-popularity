@@ -1,6 +1,8 @@
 (in-package :cl-user)
 (defpackage language-popularity.db
-  (:use :cl)
+  (:use :cl
+        :cl-json
+        :drakma)
   (:import-from :language-popularity.config
                 :config)
   (:import-from :datafly
